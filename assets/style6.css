@@ -1,0 +1,54 @@
+#finish{
+  width: 100%;
+  background-color: rgb(50, 49, 49);
+}
+#finish .container{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 200px;
+  padding: 100px 0 60px 0;
+}
+#finish .container .first p{
+  max-width: 370px;
+  font-size: 15px;
+  color: #a1a1a1;
+}
+#finish .container .first i{
+  color: white;
+}
+#finish .container .first .icons{
+  display: flex;
+  gap: 15px;
+  font-size: 34px;
+  margin-top: 20px;
+}
+#finish .container .first .icons>i:hover{
+  cursor: pointer;
+}
+#finish .container .first .secure{
+    display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+#finish .container .first .secure i{
+  font-size: 10px;
+  margin-top: 7px;
+}
+#finish .container .second{
+  display: flex;
+  gap: 150px;
+}
+#finish .container .second h3{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+#finish .container .second h5{
+  color: #a1a1a1;
+  font-size: 12px;
+}
+#finish .container .second h5:hover{
+  cursor: pointer;
+  font-size: 16px;
+}

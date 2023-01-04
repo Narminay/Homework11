@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins;
+  font-size: 10px;
+  width: 100%;
+  position: relative;
+}
+#first{
+  background-color: rgb(43,43,43);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+#first header{
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  height: 112px;
+  z-index: 1050;
+  transition: .3s;
+  box-shadow: -10px 10px 20px 2px rgb(0 0 0 / 12%);
+}
+#first header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#first header nav .logo {
+  margin-left: 6rem;
+}
+#first header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+#first header nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .4s ease;
+}
+#first header nav ul li a:hover {
+  opacity: .7;
+}
+#first header nav li + li {
+  margin-left: 3rem;
+}
+#first .cart {
+  grid-column: 3 / 4;
+}
+#first .cart i {
+  font-size: 1.4rem;
+  color: #7d1eff;
+  position: relative;
+  display: inline-block;
+  transition: .4s ease;
+}
+#first .cart i:hover {
+  color: #aa6dff;
+}
+#first .cart i span {
+  position: absolute;
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: .9rem;
+  left: 20px;
+  top: -6px;
+}
+#first .button{
+  background-color: #7d1eff;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 6rem 0 3rem;
+  padding: 1.2rem 3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: .4s;
+}
+#first .button:hover {
+  background-color: #aa6dff;
+}
+#first .circle {
+  position: relative;
+}
+#first .circle-small {
+  top: -22rem;
+  left: -15rem;
+  width: 650px;
+}
+#first .circle-large {
+  right: -25rem;
+  bottom: -34rem;
+}
+#first .container {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+}
+#first .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#first .container .content .text {
+  margin-left: 15rem;
+}
+#first .container .content .text h1 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 6rem;
+  line-height: 6rem;
+}
+#first .container .content .text h1 span {
+  color: #7d1eff;
+}
+#first .container .content .text h5 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 6rem;
+}
+#first .container .content .text p {
+  font-size: 1rem;
+  color: #fff;
+  opacity: .8;
+  max-width: 32rem;
+  margin-top: 2rem;
+}
+#first .container .content .watch {
+  padding-right: 10rem;
+}
+#first .container .content .watch img {
+  width: 90%;
+}
+#first header .rightnav{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: white;
+  width: 50px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+  position: fixed;
+  right: 43px;
+  top: 225px;
+  font-family: 'Poppins', sans-serif;
+  color: gray;
+  box-shadow: -10px 10px 20px 2px rgb(0 0 0 / 12%);
+}
+
+
+#first header .rightnav .fa-bars, .fa-glasses, .fa-bag-shopping, .fa-circle-question, .fa-headset, .fa-envelope
+{
+  position: relative;
+  font-size: 16px;
+
+}
+#first header .rightnav .fa-bars:hover, .fa-glasses:hover, .fa-bag-shopping:hover, .fa-circle-question:hover, .fa-headset:hover, .fa-envelope:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+
+
+#first header .rightnav .bars, .glasses, .shopping, .question, .headset, .envelope
+{
+  color: black;
+  position: absolute;
+  background-color: white;
+  width:30px;
+  height: 60px;
+  margin-right: 80px;
+  padding-right: 80px;
+  padding-left:20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 0.5s;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center; 
+  visibility: hidden;
+  opacity:0;
+  white-space:nowrap;
+  cursor:pointer;
+}
+
+#first header .rightnav .bars{
+  top:0;
+}
+#first header .rightnav .glasses{
+  top: 54px;
+}
+#first header .rightnav .shopping{
+  top: 111px;
+}
+#first header .rightnav .question{
+  top: 164px;
+}
+#first header .rightnav .headset{
+  top: 218px;
+} 
+#first header .rightnav .envelope{
+  top: 276px;
+}
+
+#first header .rightnav .fa-bars:hover + .bars{
+  width:140px;
+  margin-right: 120px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 80px;
+}
+#first header .rightnav .bars:hover{
+  width:140px;
+  margin-right: 120px;
+  visibility: visible;
+  opacity: 1;
+}
+#first header .rightnav .fa-glasses:hover + .glasses{
+  width:160px;
+  margin-right: 120px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 80px;
+}
+#first header .rightnav .glasses:hover{
+  width:160px;
+  margin-right: 120px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 80px;
+
+}
+#first header .rightnav .fa-bag-shopping:hover + .shopping{
+  width:160px;
+  margin-right: 160px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 80px;
+}
+#first header .rightnav .shopping:hover{
+  width:160px;
+  margin-right: 160px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 80px;
+}
+#first header .rightnav .fa-circle-question:hover + .question{
+  width:160px;
+  margin-right: 160px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 80px;
+}
+#first header .rightnav .question:hover{
+  width:160px;
+  margin-right: 160px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 80px;
+}
+#first header .rightnav .fa-headset:hover + .headset{
+  width:160px;
+  margin-right: 120px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 30px;
+}
+#first header .rightnav .headset:hover{
+  width:160px;
+  margin-right: 120px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 30px;
+}
+#first header .rightnav .fa-envelope:hover + .envelope{
+  width:220px;
+  margin-right: 180px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 30px;
+  border-bottom-right-radius:5px;
+}
+#first header .rightnav .envelope:hover{
+  width:220px;
+  margin-right: 180px;
+  visibility: visible;
+  opacity: 1;
+  padding-right: 30px;
+}
+ .top-circle{
+  background-color: #fff;
+  box-shadow: -10px 10px 20px 2px rgb(0 0 0 / 12%);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+}
+ .top-circle i{
+  margin-left: 10px;
+  margin-top: 13px;
+  color: gray;
+  font-size: 40px;
+  font-weight: 600;
+ }

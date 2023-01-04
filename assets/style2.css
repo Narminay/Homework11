@@ -1,0 +1,102 @@
+#improved{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  font-size: 10rem;
+  background-image: url(../img/parallax-slide.jpg);
+  background-position: center center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#improved .container {
+display: flex;
+flex-direction: column;
+max-width: 110rem;
+text-align: center;
+margin: 0 auto 0 auto;
+}
+#improved .container h5{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgb(172, 163, 189);
+  margin: 10rem 0 1.7rem 0;
+}
+#improved .container h2{
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgb(34, 34, 34);
+  max-width: 40rem;
+  margin: 0 auto;
+  line-height: 3.4rem;
+  letter-spacing: normal;
+}
+#improved .container h2 span{
+  color: rgb(124, 28, 254);
+}
+#improved .container p{
+  font-size: 1rem;
+  opacity: 0.7;
+  max-width: 35rem;
+  margin: 3rem auto 0 auto; 
+}
+#improved .container .watch-view{
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#improved .container .watch-view .item{
+  width: 25rem;
+  height: 30rem;
+  margin-top: 8rem;
+  overflow: hidden;
+  position: relative;
+  transition: .3s ease;
+}
+#improved .container .watch-view .item .img-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(125, 30, 255, 0.5);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+#improved .container .watch-view .item .img-icon i{
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: .2rem solid #fff;
+  padding: 10px;
+  border-radius: 40%;
+}
+#improved .container .watch-view .item img{
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+#improved .container .watch-view .item:hover .img-icon{
+  opacity: 1;
+}
+#improved .container .watch-view .item:hover img{
+  opacity: 1;
+}
+
+

@@ -1,0 +1,71 @@
+#introduction{
+background-image: url(../img/parallax-slide.jpg);
+height: 140%; 
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#introduction .firstline{
+  padding-top: 200px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Poppins' sans-serif;
+}
+#introduction .firstline h5{
+  font-size: 15px;
+  color: rgb(172, 163, 186);
+  text-align: left;
+}
+#introduction .firstline h3{
+  font-size: 45px;
+  font-weight: 900;
+  color: #7d1eff;
+  line-height: 60px;
+  text-align: left;
+}
+#introduction .firstline h2{
+  font-size: 48px;
+  color: #3c3849;
+  text-align: left;
+}
+#introduction .firstline p{
+  font-size: 18px;
+  color: #3c3849;
+  text-align: left;
+}
+#introduction .firstline .video-play{
+  position: relative;
+}
+#introduction .screen{
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 88px;
+  overflow: hidden;
+  display: block;
+}
+#introduction .screen img{
+  max-width: 100%;
+  min-height: 1px;
+  height: auto;
+  margin: 0 0 1.5rem;
+}
+#introduction .play{
+  width: 61px;
+  height: 60px;
+  background-color: white;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  border-radius: 50%;
+  transition: 0.5s;
+  border-width: 0;
+  display: block;
+
+}
+#introduction .play:hover{
+  color: white;
+  background-color: #7d1eff;
+  cursor: pointer;
+}
